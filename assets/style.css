@@ -72,7 +72,10 @@ span {
 }
 
 .content {
-  background: #212121;
+  background-color: #212121;
+	background-image: url('https://media3.giphy.com/media/lo4bwMvpdGU9QAq2M6/giphy.gif?cid=47f0c04e5d32051c637178736fb9fe23&rid=giphy.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
   height: 100vh;
 }
 
