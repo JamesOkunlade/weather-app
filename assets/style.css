@@ -48,6 +48,13 @@ h4 {
   padding-top: 2px;
   padding-bottom: 2px;
 }
+h5 {
+  font-size: 1.2em;
+  font-weight: 800;
+  line-height: 1.25em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
 
 ul {
   padding: 0;
@@ -72,7 +79,9 @@ span {
 .header {
   height: 10%;
   padding: 0 80px;
-
+}
+.logo {
+  padding: 20px 0;
 }
 
 .container {
@@ -102,11 +111,18 @@ span {
 .footer {
   height: 15%;
   padding: 0 80px;
+	display: flex;
 }
 
-.logo {
-  padding: 20px 0;
-}
+
 .datetime {
-  padding: 40px 0;
+	width: 50%;
+}
+.location {
+	width: 50%;
+	text-align:  right;
+}
+
+.datetime h5, .location h5 {
+	margin-top: 35px;
 }
