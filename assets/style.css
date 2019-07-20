@@ -79,10 +79,13 @@ span {
 }
 
 .rainyday {
-	background-image: url('https://media.giphy.com/media/Mgq7EMQUrhcvC/giphy.gif');
+	background-image: url('https://media.giphy.com/media/1225Tuw5X5By5W/giphy.gif');
 }
-.sunnyday {
-	background-image: url('https://media3.giphy.com/media/lo4bwMvpdGU9QAq2M6/giphy.gif?cid=47f0c04e5d32051c637178736fb9fe23&rid=giphy.gif');
+.clearday {
+	background-image: url('https://media.giphy.com/media/ruknycEXRhOs8/giphy.gif');
+}
+.cloudyday {
+	background-image: url('https://media.giphy.com/media/aQ7kognlRPDzi/giphy.gif');
 }
 
 
@@ -143,12 +146,11 @@ form input[type=submit] {
 }
 
 
-.datetime {
-	width: 50%;
-}
-.location {
-	width: 50%;
-	text-align:  right;
+
+.location, .datetime {
+	font-size: 1.5em;
+	margin-top: 35px;
+	margin-right: 70px;
 }
 
 .datetime h5, .location h5 {

@@ -8,10 +8,11 @@ window.addEventListener('load', () => {
   let currentLocation = false;
   const cityRegEx = /(?<city>\w+)/;
   const countryRegEx = /(?<country>[^\s]*$)/;
+  const date = Date.now();
 
 
   // Accessing the DOM
-  const content = document.querySelector('#content');
+  const content = document.getElementById("content");
   const temperature = document.querySelector('.temperature');
   const desc = document.querySelector('.description');
   const hum = document.querySelector('.humidity');
@@ -21,11 +22,13 @@ window.addEventListener('load', () => {
 
 
 
+
   document.querySelector('#search-form').addEventListener('submit', function(e)
   {
     e.preventDefault();
+    content.classList.remove("rainyday", "cloudyday")
     const location = document.querySelector('#location').value;
-    console.log(location);
+    loc.textContent = `${location}`
 
     // Extracting city and country out of string
     city = location.match(cityRegEx).groups.city;
@@ -51,11 +54,26 @@ window.addEventListener('load', () => {
         temperature.textContent = `${temp}K`;
         desc.textContent = `${description}`;
         hum.textContent = `Humidity: ${humidity}`;
-        loc.textContent = `${location}`
+        document.querySelector('.datetime').textContent = date;
+
+
+        if (description.includes("rain")) {
+          content.classList.add("rainyday")
+        } else if (description.includes("cloud")) {
+          content.classList.add("cloudyday")
+        } else {
+          content.classList.add("clearday");
+        }
+
+
+
       })
       .catch(e => {
         console.log(e);
       })
+
+
+
 
 
 
