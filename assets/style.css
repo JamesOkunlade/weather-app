@@ -105,7 +105,6 @@ form input {
 	margin-top: 15%;
 	padding: 15px;
 	border: none;
-	color: #fff;
 	font-size: 1.2em;
 	border-radius: 3px;
 
@@ -114,6 +113,8 @@ form input {
 form input[type=submit] {
 	width: 10%;
 	background: green;
+	color: #fff;
+
 }
 
 .container {
