@@ -71,13 +71,21 @@ span {
 
 }
 
-.content {
+#content {
   background-color: #212121;
-	background-image: url('https://media3.giphy.com/media/lo4bwMvpdGU9QAq2M6/giphy.gif?cid=47f0c04e5d32051c637178736fb9fe23&rid=giphy.gif');
 	background-repeat: no-repeat;
 	background-size: cover;
   height: 100vh;
 }
+
+.rainyday {
+	background-image: url('https://media.giphy.com/media/Mgq7EMQUrhcvC/giphy.gif');
+}
+.sunnyday {
+	background-image: url('https://media3.giphy.com/media/lo4bwMvpdGU9QAq2M6/giphy.gif?cid=47f0c04e5d32051c637178736fb9fe23&rid=giphy.gif');
+}
+
+
 
 .header {
   height: 10%;
@@ -87,26 +95,42 @@ span {
   padding: 20px 0;
 }
 
+.form-container {
+	height: 45%;
+	text-align: center;
+}
+
+form input {
+	width: 30%;
+	margin-top: 15%;
+	padding: 15px;
+	border: none;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 3px;
+
+}
+
+form input[type=submit] {
+	width: 10%;
+	background: green;
+}
+
 .container {
-  height: 75%;
+  height: 30%;
   border-bottom: 0.5px solid #d9d9d9;
   display: flex;
 }
 
 .temp {
-  width: 10%;
+  width: auto;
   padding: 0 80px;
-  height: 40%;
   position: relative;
-  top: 60%;
   cursor: pointer;
 }
 
 .details {
-  width: 50%;
-  height: 20%;
-  position: relative;
-  top: 80%;
+	margin-top: 100px;
 }
 
 
