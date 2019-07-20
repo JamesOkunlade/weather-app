@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
   if (mm < 10) {
     mm = '0' + mm;
   }
-  
+
   today = dd + '/' + mm + '/' + yyyy;
 
 
@@ -64,7 +64,7 @@ window.addEventListener('load', () => {
           console.log(data);
           const {temp, humidity} = data.main;
           const {description} = data.weather[0];
-          temperature.textContent = `${temp}K`;
+          temperature.textContent = `${kelvinToCelsius(temp)} C`;
           desc.textContent = `${description}`;
           hum.textContent = `Humidity: ${humidity}`;
           document.querySelector('.datetime').textContent = today;
@@ -91,3 +91,9 @@ window.addEventListener('load', () => {
 
 
 })
+
+
+// Converting temperature in Kelvin to Celsius
+function kelvinToCelsius(temp) {
+  return Math.round(temp - 273.15);
+}
