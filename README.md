@@ -14,10 +14,14 @@ JavaScript
 ## Requirements
 
 Browser
+
+Npm
 ## Installation
-> Open your git bash and **cd** to the location you'd like to put your files the run the command below.
+> Open your terminal/git bash and **cd** to the location you'd like to put your files the run the command below.
 
 `git clone https://github.com/JamesOkunlade/weather-app`
 
 
-**cd** to into the project folder and open the `index.html` file with your browser
+> **cd** into the folder and do `npm install` to install all dependencies
+
+> Run `npm start` to start the application, and open up `localhost:8080` on your browser
