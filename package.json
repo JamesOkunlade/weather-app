@@ -1,0 +1,19 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A browser based weather application using the OpenWeather API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesOkunlade/weather-app.git"
+  },
+  "author": "James Okunlade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesOkunlade/weather-app/issues"
+  },
+  "homepage": "https://github.com/JamesOkunlade/weather-app#readme"
+}
