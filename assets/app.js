@@ -38,7 +38,7 @@ window.addEventListener('load', () => {
   document.querySelector('#search-form').addEventListener('submit', function(e)
   {
     e.preventDefault();
-    content.classList.remove("rainyday", "cloudyday")
+    content.classList.remove("rainyday", "cloudyday", "clearday")
     const location = document.querySelector('#location').value;
     loc.textContent = `${location}`
 
