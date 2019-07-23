@@ -99,7 +99,7 @@ span {
 }
 
 .form-container {
-	height: 45%;
+	height: 40%;
 	text-align: center;
 }
 
@@ -121,8 +121,8 @@ form input[type=submit] {
 }
 
 .container {
-  /* height: 30%; */
-  /* border-bottom: 0.5px solid #d9d9d9; */
+  height: 30%;
+  border-bottom: 0.5px solid #d9d9d9;
   display: flex;
 }
 
@@ -140,7 +140,7 @@ form input[type=submit] {
 
 
 .footer {
-  height: 15%;
+  height: 20%;
   padding: 0 80px;
 	display: flex;
 }
@@ -167,6 +167,12 @@ form input[type=submit] {
   display: inline-block;
   width: 60px;
   height: 34px;
+	margin-top: 15px;
+
+}
+.units {
+
+	margin-top: 10px;
 }
 
 /* Hide default HTML checkbox */

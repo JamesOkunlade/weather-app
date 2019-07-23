@@ -61,23 +61,9 @@ window.addEventListener('load', () => {
           return response.json();
         })
         .then(data => {
-          console.log(data);
           const {temp, humidity} = data.main;
           const {description} = data.weather[0];
-          temperature.textContent = `${kelvinToCelsius(temp)} C`;
-          desc.textContent = `${description}`;
-          hum.textContent = `Humidity: ${humidity}`;
-          document.querySelector('.datetime').textContent = today;
-
-          // Changing the background gif based on the weather conditions
-          if (description.includes("rain")) {
-            content.classList.add("rainyday")
-          } else if (description.includes("cloud")) {
-            content.classList.add("cloudyday")
-          } else {
-            content.classList.add("clearday");
-          }
-
+          render(temp, humidity, description);
         })
         .catch(e => {
           console.log(e);
@@ -90,18 +76,34 @@ window.addEventListener('load', () => {
   });
 
 
+
+  function render(temp, humidity, description) {
+    temperature.textContent = `${Math.round(temp - 273.15)}°C`;
+    desc.textContent = `${description}`;
+    hum.textContent = `Humidity: ${humidity}`;
+    document.querySelector('.datetime').textContent = today;
+
+
+    // Temperature toggle function
+    document.getElementById("myCheckbox").addEventListener('click', () => {
+      if(document.getElementById("myCheckbox").checked === true){
+        temperature.textContent = `${Math.round(temp - 273.15)}°C`;
+      } else {
+        temperature.textContent = `${Math.round((temp - 273.15) * 9/5 + 32)}°F`;
+      }
+
+    })
+
+
+    // Changing the background gif based on the weather conditions
+    if (description.includes("rain")) {
+      content.classList.add("rainyday")
+    } else if (description.includes("cloud")) {
+      content.classList.add("cloudyday")
+    } else {
+      content.classList.add("clearday");
+    }
+  }
+
+
 })
-
-
-// Converting temperature in Kelvin to Celsius
-function kelvinToCelsius(temp) {
-  return Math.round(temp - 273.15);
-}
-
-// function toggleCheck(temp) {
-//     if(document.getElementById("myCheckbox").checked === true){
-//       temperature.textContent = `${Math.round(temp - 273.15)}`
-//     } else {
-//       temperature.textContent = `${Math.round(temp - 495.67)}`
-//     }
-//   }
