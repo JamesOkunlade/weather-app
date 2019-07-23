@@ -97,3 +97,11 @@ window.addEventListener('load', () => {
 function kelvinToCelsius(temp) {
   return Math.round(temp - 273.15);
 }
+
+// function toggleCheck(temp) {
+//     if(document.getElementById("myCheckbox").checked === true){
+//       temperature.textContent = `${Math.round(temp - 273.15)}`
+//     } else {
+//       temperature.textContent = `${Math.round(temp - 495.67)}`
+//     }
+//   }
