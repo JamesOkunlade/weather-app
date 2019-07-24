@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Weather app</title>
+
+   <!---Google Fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Lekton|Noto+Sans&display=swap" rel="stylesheet">
+
+ <!---Font awesome link -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+ <link rel="stylesheet" href="assets/style.css">
+ </head>
+ <body>
+   <div id="content" >
+     <div class="header">
+       <h4 class="logo">WeatherApp</h4>
+     </div>
+
+     <div class="form-container">
+       <form id="search-form">
+         <input type="text" name="location" placeholder="city, country" id="location">
+         <input type="submit" name="submit" value="submit">
+       </form>
+     </div>
+
+     <div class="container">
+       <div class="temp">
+         <h1 class="temperature"></h1>
+       </div>
+
+       <div class="details">
+         <h3 class="description"></h3>
+         <p class="humidity"></p>
+       </div>
+
+     </div>
+
+
+
+
+
+     <div class="footer">
+       <div class="datetime">
+         <h5 class="datetime"></h5>
+       </div>
+
+       <div class="location">
+         <h5 class="location"></h5>
+       </div>
+
+
+       <div class="">
+         <p class="units">Celcius/Fahrenheit</p>
+
+         <label class="switch">
+           <input type="checkbox" id="myCheckbox"  checked>
+           <span class="slider round"></span>
+         </label>
+       </div>
+
+
+
+
+
+     </div>
+
+   </div>
+
+
+ </body>
+ <script src="assets/app.js">
+ </script>
+
+</html>
