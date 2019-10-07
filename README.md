@@ -27,4 +27,4 @@ Npm
 
 ## Author
 
-[James Okunlade] (https://github.com/JamesOkunlade)
+[James Okunlade](https://github.com/JamesOkunlade)
