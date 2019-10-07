@@ -1,8 +1,7 @@
 # Weather App
 A browser based weather application using the OpenWeather API
 
-## Author
-James Okunlade
+![weather](weather.png)
 
 ## Technologies
 HTML
@@ -25,3 +24,6 @@ Npm
 > **cd** into the folder and do `npm install` to install all dependencies
 
 > Run `npm start` to start the application, and open up `localhost:8080` on your browser
+
+## Author
+James Okunlade
