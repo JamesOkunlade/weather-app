@@ -26,4 +26,5 @@ Npm
 > Run `npm start` to start the application, and open up `localhost:8080` on your browser
 
 ## Author
-James Okunlade
+
+[James Okunlade] (https://github.com/JamesOkunlade)
